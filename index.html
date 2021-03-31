@@ -159,7 +159,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>1 месяц</span>
-                    <input value="one-month" type="radio" name="term">
+                    <input value="one" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -169,7 +169,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>2 месяца</span>
-                    <input value="two-months" type="radio" name="term">
+                    <input value="two" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -179,7 +179,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>3-6 месяцев</span>
-                    <input value="three-to-six-months" type="radio" name="term">
+                    <input value="three-to-six" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -189,7 +189,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>6-12 месяцев</span>
-                    <input value="six-to-twelve-months" type="radio" name="term">
+                    <input value="six-to-twelve" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -199,7 +199,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>> 12 месяцев</span>
-                    <input value="twelve-months" type="radio" name="term">
+                    <input value="twelve" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -209,7 +209,7 @@
                 <div class="tab__input">
                   <label class="custom-radio">
                     <span>> 24 месяцев</span>
-                    <input value="twenty-four-months" type="radio" name="term">
+                    <input value="twenty-four" type="radio" name="term">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -401,22 +401,22 @@
               <div class="tab__elements fourth">
                 <div class="tab__final-radio">
                   <label class="custom-radio-final">
-                    <input value="one-month" type="radio" name="term-final">
+                    <input value="" type="radio" id="price-one" name="payment">
                     <span class="checkmark"></span>
                     <span>При оплате за месяц:</span>
-                    <span class="price"></span>
+                    <span class="price-one"></span>
                   </label>
                   <label class="custom-radio-final">
-                    <input value="one-month" type="radio" name="term-final">
+                    <input value="" type="radio" id="price-six" name="payment">
                     <span class="checkmark"></span>
                     <span>При оплате за 6 месяцев:</span>
-                    <span class="price"></span>
+                    <span class="price-six"></span>
                   </label>
                   <label class="custom-radio-final">
-                    <input value="one-month" type="radio" name="term-final">
+                    <input value="" type="radio" id="price-twelve" name="payment">
                     <span class="checkmark"></span>
                     <span>При оплате за год:</span>
-                    <span class="price"></span>
+                    <span class="price-twelve"></span>
                   </label>
                 </div>
                 <div class="tab__final-small-title">
@@ -432,6 +432,26 @@
                       <option value="teika">Район: Теика</option>
                       <option value="krasta">Район: Краста</option>
                       <option value="ziepniekkalns">Район: Зепниеккалнс</option>
+                    </select>
+                  </label>
+                  <label>
+                    <select class="final-term">
+                      <option value="one">Срок: 1 месяц</option>
+                      <option value="two">Срок: 2 месяца</option>
+                      <option value="three-to-six">Срок: 3-6 месяцев</option>
+                      <option value="six-to-twelve">Срок: 6-12 месяцев</option>
+                      <option value="twelve">Срок: > 12 месяцев</option>
+                      <option value="twenty-four">Срок: > 24 месяца</option>
+                    </select>
+                  </label>
+                  <label>
+                    <select class="final-size">
+                      <option value="4">Размер: 4 м²</option>
+                      <option value="5">Размер: 5 м²</option>
+                      <option value="7">Размер: 7 м²</option>
+                      <option value="10">Размер: 10 м²</option>
+                      <option value="15">Размер: 15 м²</option>
+                      <option value="30">Размер: 30 м²</option>
                     </select>
                   </label>
                 </div>

@@ -44,7 +44,98 @@ function fixStepIndicator(n) {
 
 
 
-
+const warehouses = [
+  {
+    size: '4',
+    prices: {
+      'one': 55,
+      'two': 49,
+      'three-to-six': 45,
+      'six-to-twelve': 45,
+      'twelve': 45,
+      'twenty-four': 45
+    },
+    payment: {
+      'for-six': 40,
+      'for-twelve': 37
+    }
+  },
+  {
+    size: '5',
+    prices: {
+      'one': 65,
+      'two': 59,
+      'three-to-six': 55,
+      'six-to-twelve': 55,
+      'twelve': 55,
+      'twenty-four': 55
+    },
+    payment: {
+      'for-six': 50,
+      'for-twelve': 47
+    }
+  },
+  {
+    size: '7',
+    prices: {
+      'one': 85,
+      'two': 75,
+      'three-to-six': 69,
+      'six-to-twelve': 69,
+      'twelve': 69,
+      'twenty-four': 69
+    },
+    payment: {
+      'for-six': 62,
+      'for-twelve': 57
+    }
+  },
+  {
+    size: '10',
+    prices: {
+      'one': 110,
+      'two': 97,
+      'three-to-six': 89,
+      'six-to-twelve': 89,
+      'twelve': 89,
+      'twenty-four': 89
+    },
+    payment: {
+      'for-six': 81,
+      'for-twelve': 75
+    }
+  },
+  {
+    size: '15',
+    prices: {
+      'one': 129,
+      'two': 115,
+      'three-to-six': 105,
+      'six-to-twelve': 105,
+      'twelve': 105,
+      'twenty-four': 105
+    },
+    payment: {
+      'for-six': 94,
+      'for-twelve': 85
+    }
+  },
+  {
+    size: '30',
+    prices: {
+      'one': 189,
+      'two': 179,
+      'three-to-six': 169,
+      'six-to-twelve': 169,
+      'twelve': 169,
+      'twenty-four': 155
+    },
+    payment: {
+      'for-six': 159,
+      'for-twelve': 149
+    }
+  }
+];
 
 
 
@@ -53,11 +144,14 @@ function fixStepIndicator(n) {
 
 
 // first step change area order
-let selectedWarehouse = 'centrs';
+let clientWarehouse = 'centrs';
+let clientTerm = 'two';
+let clientSize = '7';
+
 const defaultFirstWarehouse = 'imanta';
 
 const defaultWarehouse = document.querySelector('.' + defaultFirstWarehouse);
-const firstElement = document.querySelector('.' + selectedWarehouse);
+const firstElement = document.querySelector('.' + clientWarehouse);
 
 const parent = defaultWarehouse.parentNode;
 
@@ -68,27 +162,65 @@ const parent = defaultWarehouse.parentNode;
 // First AND Second step track which AREA and TERM was selected
 const selectedArea = document.querySelectorAll('input[name="area"]');
 const selectedTerm = document.querySelectorAll('input[name="term"]');
+const selectedSize = document.querySelectorAll('input[name="size"]');
 
 const dropdownArea = document.querySelector('.final-area');
+const dropdownTerm = document.querySelector('.final-term');
+const dropdownSize = document.querySelector('.final-size');
 
+const arr = [selectedArea, selectedTerm, selectedSize];
 
+const priceOne = document.querySelector('.price-one');
+const priceSix = document.querySelector('.price-six');
+const priceTwelve = document.querySelector('.price-twelve');
 
-const arr = [selectedArea, selectedTerm];
+function showFinalSum() {
+  warehouses.find((w) => {
+    if (w.size === dropdownSize.value) {
+      priceOne.textContent = w.prices[dropdownTerm.value];
+      priceSix.textContent = w.payment['for-six'];
+      priceTwelve.textContent = w.payment['for-twelve'];
+    }
+  });
+}
 
 function showData() {
-  for (const element of arr) {
-    for (const input of element) {
-      if (selectedWarehouse === input.value) {
-        input.checked = true;
-      }
-      if (input.checked) {
-        dropdownArea.value = input.value;
-        console.log(input.value);
-      }
+  // area
+  for (const input of selectedArea) {
+    if (clientWarehouse === input.value) {
+      input.checked = true;
+    }
+    if (input.checked) {
+      dropdownArea.value = input.value;
     }
   }
-  selectedWarehouse = '';
+  // term
+  for (const input of selectedTerm) {
+    if (clientTerm === input.value) {
+      input.checked = true;
+    }
+    if (input.checked) {
+      dropdownTerm.value = input.value;
+    }
+  }
+  // size
+  for (const input of selectedSize) {
+    if (clientSize === input.value) {
+      input.checked = true;
+    }
+    if (input.checked) {
+      dropdownSize.value = input.value;
+    }
+  }
+
+  clientWarehouse = '';
+  clientTerm = '';
+  clientSize = '';
+
+  showFinalSum();
 }
+
+dropdownSize.addEventListener('change', showFinalSum);
 
 for (const element of arr) {
   for (const input of element) {
@@ -100,7 +232,7 @@ for (const element of arr) {
 
 
 // Third step track which SIZE was selected
-const selectedSize = document.querySelectorAll('input[name="size"]');
+// const selectedSize = document.querySelectorAll('input[name="size"]');
 const visualSize = document.querySelectorAll('.tab__visual');
 
 function showVisual() {
@@ -109,11 +241,16 @@ function showVisual() {
   }
 
   for (let i = 0; i < selectedSize.length; i++) {
+    // if (selectedSize[i].value === clientSize) {
+    //   selectedSize[i].checked = true;
+    // }
     if (selectedSize[i].checked && selectedSize[i].value === visualSize[i].id) {
-      console.log(selectedSize[i].value);
+      // console.log(selectedSize[i].value);
       visualSize[i].style.display = 'flex';
+      // dropdownSize.value = selectedSize[i].value;
     }
   }
+  // clientSize = '';
 }
 
 for (const size of selectedSize) {
@@ -149,6 +286,12 @@ needTransport();
 
 
 
+const payment = document.querySelectorAll('input[name="payment"]');
+
+// console.log(finalTerm);
+// console.log(finalArea);
+// console.log(finalSize);
+// console.log(payment.value);
 
 
 
@@ -156,26 +299,8 @@ needTransport();
 
 
 
-const warehouses = [
-  {
-    size: '4',
-    prices: {
-      '1 mes': 55,
-      '2 mes': 49,
-      '3-6 mes': 45,
-      '6-12 mes': 45,
-      '> 12 mes': 45,
-      '> 24 mes': 45,
-    },
-    payment: {
-      'oplata za 6': 40,
-      'oplata za 12': 37
-    }
-  }
-];
 
 
-console.log(warehouses);
 
 
 
