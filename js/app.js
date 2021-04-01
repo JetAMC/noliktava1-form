@@ -42,6 +42,12 @@ function fixStepIndicator(n) {
   stepIndicator[n].className += " active";
 }
 
+// prices: {
+//   'one': {
+//     imanta: 55,
+//     teika: 65,
+//   },
+
 
 
 const warehouses = [
@@ -148,6 +154,14 @@ let clientWarehouse = 'centrs';
 let clientTerm = 'two';
 let clientSize = '7';
 
+const clientObj = {
+  'client-warehouse': 'centrs',
+  'client-term': 'two',
+  'client-size': '7'
+}
+
+// sdelatj objekt iz etih znachenij
+
 const defaultFirstWarehouse = 'imanta';
 
 const defaultWarehouse = document.querySelector('.' + defaultFirstWarehouse);
@@ -155,7 +169,7 @@ const firstElement = document.querySelector('.' + clientWarehouse);
 
 const parent = defaultWarehouse.parentNode;
 
-// parent.insertBefore(firstElement, parent.firstChild);
+parent.insertBefore(firstElement, parent.firstChild);
 
 
 
@@ -167,8 +181,6 @@ const selectedSize = document.querySelectorAll('input[name="size"]');
 const dropdownArea = document.querySelector('.final-area');
 const dropdownTerm = document.querySelector('.final-term');
 const dropdownSize = document.querySelector('.final-size');
-
-const arr = [selectedArea, selectedTerm, selectedSize];
 
 const priceOne = document.querySelector('.price-one');
 const priceSix = document.querySelector('.price-six');
@@ -184,7 +196,25 @@ function showFinalSum() {
   });
 }
 
-function showData() {
+// function showData(inputArr, clientData, dropdown) {
+//   console.log(dropdownSize);
+//   for (const input in inputArr) {
+//     if (clientData === inputArr[input].value) {
+//       inputArr[input].checked = true;
+//     }
+//     if (inputArr[input].checked) {
+//       dropdown.value = inputArr[input].value;
+//     }
+//   }
+//   clientData = '';
+//   showFinalSum();
+// }
+
+// showData(selectedArea, clientObj['client-warehouse'], dropdownArea);
+// showData(selectedTerm, clientObj['client-term'], dropdownTerm);
+// showData(selectedSize, clientObj['client-size'], dropdownSize);
+
+function showData() { // 3 argumenta (selectedarea, clientwarehouse - menjatj znachenie po polju objekta, dropdownarea - primer)
   // area
   for (const input of selectedArea) {
     if (clientWarehouse === input.value) {
@@ -222,6 +252,8 @@ function showData() {
 
 dropdownSize.addEventListener('change', showFinalSum);
 
+const arr = [selectedArea, selectedTerm, selectedSize];
+
 for (const element of arr) {
   for (const input of element) {
     input.addEventListener('change', showData);
@@ -232,7 +264,6 @@ for (const element of arr) {
 
 
 // Third step track which SIZE was selected
-// const selectedSize = document.querySelectorAll('input[name="size"]');
 const visualSize = document.querySelectorAll('.tab__visual');
 
 function showVisual() {
@@ -262,7 +293,7 @@ for (const size of selectedSize) {
 
 
 // transport needed
-const transport = document.querySelectorAll('input[name="transport"]');
+const transport = document.querySelectorAll('input[name="transport"]'); // raznij name u kazhdogo checkbox
 
 function needTransport() {
   for (const elem of transport) {
@@ -280,18 +311,9 @@ for (const elem of transport) {
 
 
 
-showData();
+// showData();
 showVisual();
-needTransport();
-
-
-
-const payment = document.querySelectorAll('input[name="payment"]');
-
-// console.log(finalTerm);
-// console.log(finalArea);
-// console.log(finalSize);
-// console.log(payment.value);
+// needTransport();
 
 
 
