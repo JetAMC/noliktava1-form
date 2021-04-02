@@ -54,12 +54,60 @@ const warehouses = [
   {
     size: '4',
     prices: {
-      'one': 55,
-      'two': 49,
-      'three-to-six': 45,
-      'six-to-twelve': 45,
-      'twelve': 45,
-      'twenty-four': 45
+      'one': {
+        'centrs': 55,
+        'zolitude': 55,
+        'purvciems': 55,
+        'imanta': 55,
+        'teika': 55,
+        'krasta': 55,
+        'ziepniekkalns': 55
+      },
+      'two': {
+        'centrs': 49,
+        'zolitude': 49,
+        'purvciems': 49,
+        'imanta': 49,
+        'teika': 49,
+        'krasta': 49,
+        'ziepniekkalns': 49
+      },
+      'three-to-six': {
+        'centrs': 45,
+        'zolitude': 45,
+        'purvciems': 45,
+        'imanta': 45,
+        'teika': 45,
+        'krasta': 45,
+        'ziepniekkalns': 45
+      },
+      'six-to-twelve': {
+        'centrs': 45,
+        'zolitude': 45,
+        'purvciems': 45,
+        'imanta': 45,
+        'teika': 45,
+        'krasta': 45,
+        'ziepniekkalns': 45
+      },
+      'twelve': {
+        'centrs': 45,
+        'zolitude': 45,
+        'purvciems': 45,
+        'imanta': 45,
+        'teika': 45,
+        'krasta': 45,
+        'ziepniekkalns': 45
+      },
+      'twenty-four': {
+        'centrs': 45,
+        'zolitude': 45,
+        'purvciems': 45,
+        'imanta': 45,
+        'teika': 45,
+        'krasta': 45,
+        'ziepniekkalns': 45
+      }
     },
     payment: {
       'for-six': 40,
@@ -69,12 +117,60 @@ const warehouses = [
   {
     size: '5',
     prices: {
-      'one': 65,
-      'two': 59,
-      'three-to-six': 55,
-      'six-to-twelve': 55,
-      'twelve': 55,
-      'twenty-four': 55
+      'one': {
+        'centrs': 65,
+        'zolitude': 65,
+        'purvciems': 65,
+        'imanta': 65,
+        'teika': 65,
+        'krasta': 65,
+        'ziepniekkalns': 65
+      },
+      'two': {
+        'centrs': 59,
+        'zolitude': 59,
+        'purvciems': 59,
+        'imanta': 59,
+        'teika': 59,
+        'krasta': 59,
+        'ziepniekkalns': 59
+      },
+      'three-to-six': {
+        'centrs': 55,
+        'zolitude': 55,
+        'purvciems': 55,
+        'imanta': 55,
+        'teika': 55,
+        'krasta': 55,
+        'ziepniekkalns': 55
+      },
+      'six-to-twelve': {
+        'centrs': 55,
+        'zolitude': 55,
+        'purvciems': 55,
+        'imanta': 55,
+        'teika': 55,
+        'krasta': 55,
+        'ziepniekkalns': 55
+      },
+      'twelve': {
+        'centrs': 55,
+        'zolitude': 55,
+        'purvciems': 55,
+        'imanta': 55,
+        'teika': 55,
+        'krasta': 55,
+        'ziepniekkalns': 55
+      },
+      'twenty-four': {
+        'centrs': 55,
+        'zolitude': 55,
+        'purvciems': 55,
+        'imanta': 55,
+        'teika': 55,
+        'krasta': 55,
+        'ziepniekkalns': 55
+      }
     },
     payment: {
       'for-six': 50,
@@ -84,12 +180,60 @@ const warehouses = [
   {
     size: '7',
     prices: {
-      'one': 85,
-      'two': 75,
-      'three-to-six': 69,
-      'six-to-twelve': 69,
-      'twelve': 69,
-      'twenty-four': 69
+      'one': {
+        'centrs': 85,
+        'zolitude': 85,
+        'purvciems': 85,
+        'imanta': 85,
+        'teika': 85,
+        'krasta': 85,
+        'ziepniekkalns': 85
+      },
+      'two': {
+        'centrs': 75,
+        'zolitude': 75,
+        'purvciems': 75,
+        'imanta': 75,
+        'teika': 75,
+        'krasta': 75,
+        'ziepniekkalns': 75
+      },
+      'three-to-six': {
+        'centrs': 69,
+        'zolitude': 69,
+        'purvciems': 69,
+        'imanta': 69,
+        'teika': 69,
+        'krasta': 69,
+        'ziepniekkalns': 69
+      },
+      'six-to-twelve': {
+        'centrs': 69,
+        'zolitude': 69,
+        'purvciems': 69,
+        'imanta': 69,
+        'teika': 69,
+        'krasta': 69,
+        'ziepniekkalns': 69
+      },
+      'twelve': {
+        'centrs': 69,
+        'zolitude': 69,
+        'purvciems': 69,
+        'imanta': 69,
+        'teika': 69,
+        'krasta': 69,
+        'ziepniekkalns': 69
+      },
+      'twenty-four': {
+        'centrs': 69,
+        'zolitude': 69,
+        'purvciems': 69,
+        'imanta': 69,
+        'teika': 69,
+        'krasta': 69,
+        'ziepniekkalns': 69
+      }
     },
     payment: {
       'for-six': 62,
@@ -99,12 +243,60 @@ const warehouses = [
   {
     size: '10',
     prices: {
-      'one': 110,
-      'two': 97,
-      'three-to-six': 89,
-      'six-to-twelve': 89,
-      'twelve': 89,
-      'twenty-four': 89
+      'one': {
+        'centrs': 110,
+        'zolitude': 110,
+        'purvciems': 110,
+        'imanta': 110,
+        'teika': 110,
+        'krasta': 110,
+        'ziepniekkalns': 110
+      },
+      'two': {
+        'centrs': 97,
+        'zolitude': 97,
+        'purvciems': 97,
+        'imanta': 97,
+        'teika': 97,
+        'krasta': 97,
+        'ziepniekkalns': 97
+      },
+      'three-to-six': {
+        'centrs': 89,
+        'zolitude': 89,
+        'purvciems': 89,
+        'imanta': 89,
+        'teika': 89,
+        'krasta': 89,
+        'ziepniekkalns': 89
+      },
+      'six-to-twelve': {
+        'centrs': 89,
+        'zolitude': 89,
+        'purvciems': 89,
+        'imanta': 89,
+        'teika': 89,
+        'krasta': 89,
+        'ziepniekkalns': 89
+      },
+      'twelve': {
+        'centrs': 89,
+        'zolitude': 89,
+        'purvciems': 89,
+        'imanta': 89,
+        'teika': 89,
+        'krasta': 89,
+        'ziepniekkalns': 89
+      },
+      'twenty-four': {
+        'centrs': 89,
+        'zolitude': 89,
+        'purvciems': 89,
+        'imanta': 89,
+        'teika': 89,
+        'krasta': 89,
+        'ziepniekkalns': 89
+      }
     },
     payment: {
       'for-six': 81,
@@ -114,12 +306,60 @@ const warehouses = [
   {
     size: '15',
     prices: {
-      'one': 129,
-      'two': 115,
-      'three-to-six': 105,
-      'six-to-twelve': 105,
-      'twelve': 105,
-      'twenty-four': 105
+      'one': {
+        'centrs': 129,
+        'zolitude': 129,
+        'purvciems': 129,
+        'imanta': 129,
+        'teika': 129,
+        'krasta': 129,
+        'ziepniekkalns': 129
+      },
+      'two': {
+        'centrs': 115,
+        'zolitude': 115,
+        'purvciems': 115,
+        'imanta': 115,
+        'teika': 115,
+        'krasta': 115,
+        'ziepniekkalns': 115
+      },
+      'three-to-six': {
+        'centrs': 105,
+        'zolitude': 105,
+        'purvciems': 105,
+        'imanta': 105,
+        'teika': 105,
+        'krasta': 105,
+        'ziepniekkalns': 105
+      },
+      'six-to-twelve': {
+        'centrs': 105,
+        'zolitude': 105,
+        'purvciems': 105,
+        'imanta': 105,
+        'teika': 105,
+        'krasta': 105,
+        'ziepniekkalns': 105
+      },
+      'twelve': {
+        'centrs': 105,
+        'zolitude': 105,
+        'purvciems': 105,
+        'imanta': 105,
+        'teika': 105,
+        'krasta': 105,
+        'ziepniekkalns': 105
+      },
+      'twenty-four': {
+        'centrs': 105,
+        'zolitude': 105,
+        'purvciems': 105,
+        'imanta': 105,
+        'teika': 105,
+        'krasta': 105,
+        'ziepniekkalns': 105
+      }
     },
     payment: {
       'for-six': 94,
@@ -129,12 +369,60 @@ const warehouses = [
   {
     size: '30',
     prices: {
-      'one': 189,
-      'two': 179,
-      'three-to-six': 169,
-      'six-to-twelve': 169,
-      'twelve': 169,
-      'twenty-four': 155
+      'one': {
+        'centrs': 189,
+        'zolitude': 189,
+        'purvciems': 189,
+        'imanta': 189,
+        'teika': 189,
+        'krasta': 189,
+        'ziepniekkalns': 189
+      },
+      'two': {
+        'centrs': 179,
+        'zolitude': 179,
+        'purvciems': 179,
+        'imanta': 179,
+        'teika': 179,
+        'krasta': 179,
+        'ziepniekkalns': 179
+      },
+      'three-to-six': {
+        'centrs': 169,
+        'zolitude': 169,
+        'purvciems': 169,
+        'imanta': 169,
+        'teika': 169,
+        'krasta': 169,
+        'ziepniekkalns': 169
+      },
+      'six-to-twelve': {
+        'centrs': 169,
+        'zolitude': 169,
+        'purvciems': 169,
+        'imanta': 169,
+        'teika': 169,
+        'krasta': 169,
+        'ziepniekkalns': 169
+      },
+      'twelve': {
+        'centrs': 169,
+        'zolitude': 169,
+        'purvciems': 169,
+        'imanta': 169,
+        'teika': 169,
+        'krasta': 169,
+        'ziepniekkalns': 169
+      },
+      'twenty-four': {
+        'centrs': 155,
+        'zolitude': 155,
+        'purvciems': 155,
+        'imanta': 155,
+        'teika': 155,
+        'krasta': 155,
+        'ziepniekkalns': 155
+      }
     },
     payment: {
       'for-six': 159,
@@ -149,31 +437,22 @@ const warehouses = [
 
 
 
-// first step change area order
-let clientWarehouse = 'centrs';
-let clientTerm = 'two';
-let clientSize = '7';
 
 const clientObj = {
   'client-warehouse': 'centrs',
   'client-term': 'two',
-  'client-size': '7'
+  'client-size': '4'
 }
 
-// sdelatj objekt iz etih znachenij
-
-const defaultFirstWarehouse = 'imanta';
-
-const defaultWarehouse = document.querySelector('.' + defaultFirstWarehouse);
-const firstElement = document.querySelector('.' + clientWarehouse);
-
+// first step change area order based on what client have chosen on tilda website
+const defaultWarehouse = document.querySelector('.' + 'zolitude');
+const firstElement = document.querySelector('.' + clientObj['client-warehouse']);
 const parent = defaultWarehouse.parentNode;
 
 parent.insertBefore(firstElement, parent.firstChild);
 
 
 
-// First AND Second step track which AREA and TERM was selected
 const selectedArea = document.querySelectorAll('input[name="area"]');
 const selectedTerm = document.querySelectorAll('input[name="term"]');
 const selectedSize = document.querySelectorAll('input[name="size"]');
@@ -186,84 +465,64 @@ const priceOne = document.querySelector('.price-one');
 const priceSix = document.querySelector('.price-six');
 const priceTwelve = document.querySelector('.price-twelve');
 
+
+// show sum on last step based on area size AND term
 function showFinalSum() {
+  const size = dropdownSize.value;
+  const area = dropdownArea.value;
+  const term = dropdownTerm.value;
+
   warehouses.find((w) => {
-    if (w.size === dropdownSize.value) {
-      priceOne.textContent = w.prices[dropdownTerm.value];
+    if (w.size === size) {
+      priceOne.textContent = w.prices[term][area];
       priceSix.textContent = w.payment['for-six'];
       priceTwelve.textContent = w.payment['for-twelve'];
     }
   });
 }
 
-// function showData(inputArr, clientData, dropdown) {
-//   console.log(dropdownSize);
-//   for (const input in inputArr) {
-//     if (clientData === inputArr[input].value) {
-//       inputArr[input].checked = true;
-//     }
-//     if (inputArr[input].checked) {
-//       dropdown.value = inputArr[input].value;
-//     }
-//   }
-//   clientData = '';
-//   showFinalSum();
-// }
+// add event when chaning size of warehouse in dropdown (one the last step);
+dropdownSize.addEventListener('change', showFinalSum);
+dropdownArea.addEventListener('change', showFinalSum);
+dropdownTerm.addEventListener('change', showFinalSum);
 
-// showData(selectedArea, clientObj['client-warehouse'], dropdownArea);
-// showData(selectedTerm, clientObj['client-term'], dropdownTerm);
-// showData(selectedSize, clientObj['client-size'], dropdownSize);
-
-function showData() { // 3 argumenta (selectedarea, clientwarehouse - menjatj znachenie po polju objekta, dropdownarea - primer)
-  // area
-  for (const input of selectedArea) {
-    if (clientWarehouse === input.value) {
+// show client data, let client choose another option AND show his choice in dropdowns (on the last step)
+function showData(inputArr, clientData, dropdown) {
+  for (const input of inputArr) {
+    if (clientData === input.value) {
       input.checked = true;
     }
     if (input.checked) {
-      dropdownArea.value = input.value;
+      dropdown.value = input.value;
     }
   }
-  // term
-  for (const input of selectedTerm) {
-    if (clientTerm === input.value) {
-      input.checked = true;
-    }
-    if (input.checked) {
-      dropdownTerm.value = input.value;
+  
+  for (const elem in clientObj) {
+    if (clientData === clientObj[elem]) {
+      clientObj[elem] = '';
     }
   }
-  // size
-  for (const input of selectedSize) {
-    if (clientSize === input.value) {
-      input.checked = true;
-    }
-    if (input.checked) {
-      dropdownSize.value = input.value;
-    }
-  }
-
-  clientWarehouse = '';
-  clientTerm = '';
-  clientSize = '';
 
   showFinalSum();
 }
 
-dropdownSize.addEventListener('change', showFinalSum);
+// add event when choosing another input
+for (const input of selectedArea) {
+  input.addEventListener('change', () => showData(selectedArea, clientObj['client-warehouse'], dropdownArea));
+}
 
-const arr = [selectedArea, selectedTerm, selectedSize];
+for (const input of selectedTerm) {
+  input.addEventListener('change', () => showData(selectedTerm, clientObj['client-term'], dropdownTerm));
+}
 
-for (const element of arr) {
-  for (const input of element) {
-    input.addEventListener('change', showData);
-  }
+for (const input of selectedSize) {
+  input.addEventListener('change', () => showData(selectedSize, clientObj['client-size'], dropdownSize));
 }
 
 
 
 
-// Third step track which SIZE was selected
+// Third step show DIV information based on which radio button have chosen
 const visualSize = document.querySelectorAll('.tab__visual');
 
 function showVisual() {
@@ -272,16 +531,10 @@ function showVisual() {
   }
 
   for (let i = 0; i < selectedSize.length; i++) {
-    // if (selectedSize[i].value === clientSize) {
-    //   selectedSize[i].checked = true;
-    // }
     if (selectedSize[i].checked && selectedSize[i].value === visualSize[i].id) {
-      // console.log(selectedSize[i].value);
       visualSize[i].style.display = 'flex';
-      // dropdownSize.value = selectedSize[i].value;
     }
   }
-  // clientSize = '';
 }
 
 for (const size of selectedSize) {
@@ -292,26 +545,28 @@ for (const size of selectedSize) {
 
 
 
-// transport needed
-const transport = document.querySelectorAll('input[name="transport"]'); // raznij name u kazhdogo checkbox
+// // transport needed
+// const transport = document.querySelectorAll('input[name="transport"]'); // raznij name u kazhdogo checkbox
 
-function needTransport() {
-  for (const elem of transport) {
-    if (elem.checked) {
-      console.log(true);
-    }
-  }
-}
+// function needTransport() {
+//   for (const elem of transport) {
+//     if (elem.checked) {
+//       console.log(true);
+//     }
+//   }
+// }
 
-// elem.checked = false; - razobratjsa chtobi delal uncheck drugie checkboxi
+// // elem.checked = false; - razobratjsa chtobi delal uncheck drugie checkboxi
 
-for (const elem of transport) {
-  elem.addEventListener('change', needTransport);
-}
+// for (const elem of transport) {
+//   elem.addEventListener('change', needTransport);
+// }
 
 
+showData(selectedArea, clientObj['client-warehouse'], dropdownArea);
+showData(selectedTerm, clientObj['client-term'], dropdownTerm);
+showData(selectedSize, clientObj['client-size'], dropdownSize);
 
-// showData();
 showVisual();
 // needTransport();
 
