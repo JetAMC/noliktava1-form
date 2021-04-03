@@ -439,9 +439,9 @@ const warehouses = [
 
 
 const clientObj = {
-  'client-warehouse': 'centrs',
+  'client-warehouse': 'zolitude',
   'client-term': 'two',
-  'client-size': '4'
+  'client-size': '7'
 }
 
 // first step change area order based on what client have chosen on tilda website
@@ -452,7 +452,6 @@ const parent = defaultWarehouse.parentNode;
 parent.insertBefore(firstElement, parent.firstChild);
 
 
-
 const selectedArea = document.querySelectorAll('input[name="area"]');
 const selectedTerm = document.querySelectorAll('input[name="term"]');
 const selectedSize = document.querySelectorAll('input[name="size"]');
@@ -461,13 +460,23 @@ const dropdownArea = document.querySelector('.final-area');
 const dropdownTerm = document.querySelector('.final-term');
 const dropdownSize = document.querySelector('.final-size');
 
+const priceForPaysera = document.querySelectorAll('input[name="payment"]');
+
 const priceOne = document.querySelector('.price-one');
 const priceSix = document.querySelector('.price-six');
 const priceTwelve = document.querySelector('.price-twelve');
 
+const fullOne = document.querySelector('.fullOne');
+const fullSix = document.querySelector('.fullSix');
+const fullTwelve = document.querySelector('.fullTwelve');
 
-// show sum on last step based on area size AND term
-function showFinalSum() {
+const profitSix = document.querySelector('.profit-six');
+const profitTwelve = document.querySelector('.profit-twelve');
+
+const priceArr = [fullOne, fullSix, fullTwelve];
+
+// show sum on last step based on area size AND term + count sum with discount and add deposit
+function showPriceForPaysera() {
   const size = dropdownSize.value;
   const area = dropdownArea.value;
   const term = dropdownTerm.value;
@@ -479,12 +488,42 @@ function showFinalSum() {
       priceTwelve.textContent = w.payment['for-twelve'];
     }
   });
+
+  profitSix.textContent = (priceOne.textContent * 6) - (priceSix.textContent * 6);
+  profitTwelve.textContent = (priceOne.textContent * 12) - (priceTwelve.textContent * 12);
+
+  fullSix.textContent = priceSix.textContent * 6;
+  fullTwelve.textContent = priceTwelve.textContent * 12;
+
+  // 6 months - first month - 50%
+  // fullSix.textContent = priceSix.textContent * 6 - priceSix.textContent / 2;
+
+  // 12 months - first and last month - 50%
+  // fullTwelve.textContent = priceTwelve.textContent * 12 - priceTwelve.textContent; // 50% discount
+
+  for (let i = 0; i < priceForPaysera.length; i++) {
+    if (priceForPaysera[i].checked && priceArr[i].className === 'price-one fullOne') {
+      priceForPaysera[i].value = priceOne.textContent * 2;
+      console.log(priceForPaysera[i].value);
+    } else if (priceForPaysera[i].checked && priceArr[i].className === 'fullSix') {
+      priceForPaysera[i].value = Number(fullSix.textContent) + Number(priceSix.textContent);
+      console.log(priceForPaysera[i].value);
+    } else if (priceForPaysera[i].checked && priceArr[i].className === 'fullTwelve') {
+      priceForPaysera[i].value = Number(fullTwelve.textContent) + Number(priceTwelve.textContent);
+      console.log(priceForPaysera[i].value);
+    }
+  }
+
 }
 
+for (const input of priceForPaysera) {
+  input.addEventListener('change', showPriceForPaysera);
+}
+
+
 // add event when chaning size of warehouse in dropdown (one the last step);
-dropdownSize.addEventListener('change', showFinalSum);
-dropdownArea.addEventListener('change', showFinalSum);
-dropdownTerm.addEventListener('change', showFinalSum);
+const dropdownArr = [dropdownSize, dropdownArea, dropdownTerm];
+dropdownArr.map(elem => elem.addEventListener('change', showPriceForPaysera));
 
 // show client data, let client choose another option AND show his choice in dropdowns (on the last step)
 function showData(inputArr, clientData, dropdown) {
@@ -503,7 +542,7 @@ function showData(inputArr, clientData, dropdown) {
     }
   }
 
-  showFinalSum();
+  showPriceForPaysera();
 }
 
 // add event when choosing another input
@@ -556,7 +595,7 @@ for (const size of selectedSize) {
 //   }
 // }
 
-// // elem.checked = false; - razobratjsa chtobi delal uncheck drugie checkboxi
+// // elem.checked = false; - checkbox unchecked
 
 // for (const elem of transport) {
 //   elem.addEventListener('change', needTransport);
