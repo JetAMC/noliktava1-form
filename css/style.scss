@@ -22,6 +22,10 @@ button:focus, input:focus {
   margin: 0 auto;
 }
 
+label {
+  cursor: pointer;
+}
+
 .main {
   background: url('../images/BG.png') no-repeat top;
   background-size: cover;
@@ -496,6 +500,19 @@ button:focus, input:focus {
   }
   span {
     font-size: 15px;
+    margin-bottom: 7px;
+  }
+  p {
+    font-weight: 600;
+    color: #991010;
+    max-width: 196px;
+    width: 100%;
+    font-size: 15px;
+    span {
+      font-weight: 600;
+      color: #991010;
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -23,6 +23,10 @@ button:focus, input:focus {
   margin: 0 auto;
 }
 
+label {
+  cursor: pointer;
+}
+
 .main {
   background: url("../images/BG.png") no-repeat top;
   background-size: cover;
@@ -615,6 +619,21 @@ button:focus, input:focus {
 
 .custom-radio-final span {
   font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.custom-radio-final p {
+  font-weight: 600;
+  color: #991010;
+  max-width: 196px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.custom-radio-final p span {
+  font-weight: 600;
+  color: #991010;
+  margin-bottom: 0;
 }
 
 /* Hide the browser's default radio button */

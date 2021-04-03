@@ -415,13 +415,13 @@ const warehouses = [
         'ziepniekkalns': 169
       },
       'twenty-four': {
-        'centrs': 155,
-        'zolitude': 155,
-        'purvciems': 155,
-        'imanta': 155,
-        'teika': 155,
-        'krasta': 155,
-        'ziepniekkalns': 155
+        'centrs': 159,
+        'zolitude': 159,
+        'purvciems': 159,
+        'imanta': 159,
+        'teika': 159,
+        'krasta': 159,
+        'ziepniekkalns': 159
       }
     },
     payment: {
@@ -475,12 +475,15 @@ const profitTwelve = document.querySelector('.profit-twelve');
 
 const priceArr = [fullOne, fullSix, fullTwelve];
 
-// show sum on last step based on area size AND term + count sum with discount and add deposit
+
+
+// show sum on last step based on area size AND term + count sum with discount and add deposit and transfer to paysera
 function showPriceForPaysera() {
   const size = dropdownSize.value;
   const area = dropdownArea.value;
   const term = dropdownTerm.value;
 
+  // show prices in radio buttons
   warehouses.find((w) => {
     if (w.size === size) {
       priceOne.textContent = w.prices[term][area];
@@ -489,31 +492,36 @@ function showPriceForPaysera() {
     }
   });
 
-  profitSix.textContent = (priceOne.textContent * 6) - (priceSix.textContent * 6);
-  profitTwelve.textContent = (priceOne.textContent * 12) - (priceTwelve.textContent * 12);
+  // count profit if client want to pay for six or twelve months
+  const countProfitSix = priceOne.textContent * 6 - priceSix.textContent * 6;
+  const countProfitTwelve = priceOne.textContent * 12 - priceTwelve.textContent * 12;
 
+  // show profit in span
+  profitSix.textContent = countProfitSix;
+  profitTwelve.textContent = countProfitTwelve;
+
+  // show full price if pay for six or twelve months
   fullSix.textContent = priceSix.textContent * 6;
   fullTwelve.textContent = priceTwelve.textContent * 12;
 
   // 6 months - first month - 50%
   // fullSix.textContent = priceSix.textContent * 6 - priceSix.textContent / 2;
-
   // 12 months - first and last month - 50%
-  // fullTwelve.textContent = priceTwelve.textContent * 12 - priceTwelve.textContent; // 50% discount
+  // fullTwelve.textContent = priceTwelve.textContent * 12 - priceTwelve.textContent;
 
+  const priceWithDepositObj = {
+    'price-one fullOne': priceOne.textContent * 2,
+    'fullSix': Number(fullSix.textContent) + Number(priceSix.textContent),
+    'fullTwelve': Number(fullTwelve.textContent) + Number(priceTwelve.textContent)
+  }
+
+  // add deposit to selected value
   for (let i = 0; i < priceForPaysera.length; i++) {
-    if (priceForPaysera[i].checked && priceArr[i].className === 'price-one fullOne') {
-      priceForPaysera[i].value = priceOne.textContent * 2;
-      console.log(priceForPaysera[i].value);
-    } else if (priceForPaysera[i].checked && priceArr[i].className === 'fullSix') {
-      priceForPaysera[i].value = Number(fullSix.textContent) + Number(priceSix.textContent);
-      console.log(priceForPaysera[i].value);
-    } else if (priceForPaysera[i].checked && priceArr[i].className === 'fullTwelve') {
-      priceForPaysera[i].value = Number(fullTwelve.textContent) + Number(priceTwelve.textContent);
+    if (priceForPaysera[i].checked) {
+      priceForPaysera[i].value = priceWithDepositObj[priceArr[i].className];
       console.log(priceForPaysera[i].value);
     }
   }
-
 }
 
 for (const input of priceForPaysera) {
@@ -521,29 +529,28 @@ for (const input of priceForPaysera) {
 }
 
 
+
 // add event when chaning size of warehouse in dropdown (one the last step);
 const dropdownArr = [dropdownSize, dropdownArea, dropdownTerm];
 dropdownArr.map(elem => elem.addEventListener('change', showPriceForPaysera));
 
+
+
 // show client data, let client choose another option AND show his choice in dropdowns (on the last step)
 function showData(inputArr, clientData, dropdown) {
   for (const input of inputArr) {
-    if (clientData === input.value) {
-      input.checked = true;
-    }
-    if (input.checked) {
-      dropdown.value = input.value;
-    }
+    clientData === input.value ? input.checked = true : undefined;
+    input.checked ? dropdown.value = input.value : undefined;
   }
   
   for (const elem in clientObj) {
-    if (clientData === clientObj[elem]) {
-      clientObj[elem] = '';
-    }
+    clientData === clientObj[elem] ? clientObj[elem] = '' : undefined;
   }
 
   showPriceForPaysera();
 }
+
+
 
 // add event when choosing another input
 for (const input of selectedArea) {
@@ -557,7 +564,6 @@ for (const input of selectedTerm) {
 for (const input of selectedSize) {
   input.addEventListener('change', () => showData(selectedSize, clientObj['client-size'], dropdownSize));
 }
-
 
 
 
