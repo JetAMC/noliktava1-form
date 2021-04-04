@@ -8,8 +8,8 @@ function showTab(n) {
     let tab = document.getElementsByClassName("tab");
     tab[n].style.display = "flex";
     // ... and fix the Previous/Next buttons:
-    n === 0 ? prevBtn.style.display = "none" : prevBtn.style.display = "inline";
-    n === tab.length - 1 ? nextBtn.textContent = "Submit" : nextBtn.textContent = "Дальше →";
+    n === 0 || n === tab.length - 1 ? prevBtn.style.display = "none" : prevBtn.style.display = "inline";
+    n === tab.length - 1 ? nextBtn.style.display = "none" : nextBtn.style.display = "inline";
     // ... and run a function that displays the correct step indicator:
     fixStepIndicator(n)
 }
@@ -21,12 +21,6 @@ function nextPrev(n) {
   tab[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab += n;
-  // if you have reached the end of the form... :
-  if (currentTab >= tab.length) {
-    //...the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-  }
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
@@ -473,6 +467,8 @@ const fullTwelve = document.querySelector('.fullTwelve');
 const profitSix = document.querySelector('.profit-six');
 const profitTwelve = document.querySelector('.profit-twelve');
 
+
+
 const priceArr = [fullOne, fullSix, fullTwelve];
 
 
@@ -515,12 +511,17 @@ function showPriceForPaysera() {
     'fullTwelve': Number(fullTwelve.textContent) + Number(priceTwelve.textContent)
   }
 
+  const checkedRadio = document.querySelectorAll('.custom-radio-final');
   // add deposit to selected value
   for (let i = 0; i < priceForPaysera.length; i++) {
     if (priceForPaysera[i].checked) {
       priceForPaysera[i].value = priceWithDepositObj[priceArr[i].className];
+      checkedRadio[i].style.border = "2px solid #991010";
       console.log(priceForPaysera[i].value);
+    } else {
+      checkedRadio[i].style.border = "1px solid #C4C4C4";
     }
+    
   }
 }
 

@@ -101,7 +101,7 @@ label {
   flex-direction: column;
 }
 
-.main__buttons #nextBtn, #prevBtn {
+.main__buttons #nextBtn, #prevBtn, #pay-with-online-bank, #pay-with-card {
   width: 247px;
   height: 69px;
   border: 0;
@@ -111,6 +111,7 @@ label {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 #nextBtn {
@@ -217,25 +218,6 @@ label {
   justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Make circles that indicate the steps of the form: */
 .step {
   height: 20px;
@@ -260,13 +242,9 @@ label {
 
 
 
-.footer {
-  height: 273px;
-  background: #991010;
-}
 
 
-/* CUSTOM RADIO BUTTON ********************************************/
+/* FIRST AND SECOND STEP CUSTOM RADIO BUTTON ********************************************/
 .custom-radio {
   position: relative;
   display: flex;
@@ -324,9 +302,7 @@ label {
 }
 
 
-
-
-/* THIRD STEP RADIO */
+/* THIRD STEP CUSTOM RADIO BUTTON ********************************************/
 .third-step-radio {
   position: relative;
   display: flex;
@@ -375,26 +351,34 @@ label {
   }
 }
 
+
+
+
+
 .tab__radio-buttons {
   margin-bottom: 64px;
 }
 
+/* THIRD STEP *******************************************/
 .third {
   display: flex;
   justify-content: center;
 }
 
+.tab__visual-img {
+  img {
+    max-width: 472px;
+    width: 100%;
+    margin-right: 67px;
+  }
+}
 .tab__visual {
   // max-width: 840px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 53px;
-  img {
-    max-width: 472px;
-    width: 100%;
-    margin-right: 67px;
-  }
+
 }
 
 .tab__visual-text {
@@ -453,7 +437,7 @@ label {
 }
 
 
-
+/* FOURTH STEP *******************************************/
 .fourth {
   display: flex;
   justify-content: center;
@@ -484,14 +468,14 @@ label {
   flex-direction: column;
 }
 
-/* CUSTOM RADIO BUTTON ********************************************/
+/* CUSTOM RADIO BUTTON WITH FINAL PRICE ********************************************/
 .custom-radio-final {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid #991010;
+  // border: 2px solid #991010;
   width: 271px;
   height: 90px;
   margin-right: 37px;
@@ -563,4 +547,190 @@ label {
 	height: 7px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+
+
+.tab__final-dropdowns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+/* CUSTOM DROPDOWN ********************************/
+.custom-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 425px;
+  width: 100%;
+  height: 61px;
+  border-radius: 40px;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.custom-select select {
+  display: inline-block;
+  margin: 0;
+  outline: none;
+  line-height: 1.2;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.final-area, .final-size, .final-term {
+  max-width: 425px;
+  width: 100%;
+  border: 0;
+  font-weight: 600;
+  height: 100%;
+  font-size: 17px;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.fa-angle-down {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 5px 5px;
+  pointer-events: none;
+  font-size: 18px;
+  background: #991010;
+  border-radius: 50%;
+}
+
+.submit-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+#pay-with-online-bank {
+  margin-right: 21px;
+}
+
+.privacy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 59px;
+  p {
+    margin-left: 16px;
+    font-size: 12px;
+    max-width: 300px;
+    width: 100%;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.payment-systems {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer {
+  padding: 50px 0;
+  background: #991010;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
+  p {
+    font-size: 17px;
+    max-width: 235px;
+    width: 100%;
+  }
+}
+
+.footer__socials {
+  a {
+    margin-right: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__right {
+  display: flex;
+}
+
+.footer__right-title {
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer__policy {
+  a {
+    font-size: 17px;
+    color: #fff;
+  }
+}
+
+.footer__right-side {
+  margin-right: 83px;
+}
+
+.footer__right-data {
+  margin-bottom: 34px;
+  p {
+    font-size: 17px;
+    max-width: 348px;
+    width: 100%;
+    font-weight: 300;
+  }
+}
+
+.footer__right-powered {
+  p {
+    font-size: 17px;
+    img {
+      position: relative;
+      top: 3px;
+    }
+  }
 }
