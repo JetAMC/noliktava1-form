@@ -44,7 +44,7 @@
                   <div class="custom-radio">
                     <input value="zolitude" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Zolitude</span>
+                    <span>Золитуде</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -60,7 +60,7 @@
                   <div class="custom-radio">
                     <input value="purvciems" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Purvciems</span>
+                    <span>Пурвциемс</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -76,7 +76,7 @@
                   <div class="custom-radio">
                     <input value="centrs" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Centrs</span>
+                    <span>Центр</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -92,7 +92,7 @@
                   <div class="custom-radio">
                     <input value="imanta" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Imanta</span>
+                    <span>Иманта</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -108,7 +108,7 @@
                   <div class="custom-radio">
                     <input value="teika" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Teika</span>
+                    <span>Теика</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -124,7 +124,7 @@
                   <div class="custom-radio">
                     <input value="krasta" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Krasta</span>
+                    <span>Краста</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -140,7 +140,7 @@
                   <div class="custom-radio">
                     <input value="ziepniekkalns" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Ziepniekkalns</span>
+                    <span>Зепниеккалнс</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -249,7 +249,7 @@
               </div>
               <div id="4" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/4-meters-small.jpg" data-action="zoom" data-original="images/big/4-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/4-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -273,7 +273,7 @@
               </div>
               <div id="5" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/5-meters-small.jpg" data-action="zoom" data-original="images/big/5-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/5-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -297,7 +297,7 @@
               </div>
               <div id="7" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/7-meters-small.jpg" data-action="zoom" data-original="images/big/7-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/7-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -321,7 +321,7 @@
               </div>
               <div id="10" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/10-meters-small.jpg" data-action="zoom" data-original="images/big/10-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/10-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -345,7 +345,7 @@
               </div>
               <div id="15" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/15-meters-small.jpg" data-action="zoom" data-original="images/big/15-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/15-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -369,7 +369,7 @@
               </div>
               <div id="30" class="tab__visual">
                 <div class="tab__visual-img value-img">
-                  <img alt="" class="zoom" src="images/30-meters-small.jpg" data-action="zoom" data-original="images/big/30-meters.jpg">
+                  <img alt="" class="zoom-images" src="images/big/30-meters.jpg">
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -391,6 +391,11 @@
                   </div>
                 </div>
               </div>
+                <!-- Zoom images Modal -->
+                <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                </div>
             </div>
           </div>
           <form action="order.php" method="POST">
@@ -515,7 +520,7 @@
             <a href="mailto:noliktava1@inbox.lv"><img alt="" src="images/mail.png">noliktava1@inbox.lv</a>
           </div>
           <div class="footer__policy">
-            <a href="">Политика конфиденциальности</a>
+            <a href="https://noliktava1.lv/privacy" target="_blank">Политика конфиденциальности</a>
           </div>
         </div>
         <div class="footer__left-side">
@@ -526,16 +531,12 @@
             <p>NOLIKTAVA1, SIA, Reģ. Nr. 44103124767 LV04HABA0551047025254<br> A/S Swedbank HABALV22</p>
           </div>
           <div class="footer__right-powered">
-            <p>Разработка и <br>продвижение сайта - <img alt="" src="images/penguin-white.png" /></p>
+            <a href="https://penguindigital.eu/ru?utm_source=form&utm_medium=noliktava1" target="_blank">Разработка и <br>продвижение сайта - <img alt="" src="images/penguin-white.png" /></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 <script src="js/app.js"></script>
-<script src="js/zooming.min.js"></script>
-<script>
-  new Zooming().listen('.zoom')
-</script>
 </body>
 </html>

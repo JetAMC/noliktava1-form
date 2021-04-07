@@ -94,13 +94,13 @@ const warehouses = [
         'ziepniekkalns': 45
       },
       'twenty-four': {
-        'centrs': 45,
-        'zolitude': 45,
-        'purvciems': 45,
-        'imanta': 45,
-        'teika': 45,
-        'krasta': 45,
-        'ziepniekkalns': 45
+        'centrs': 40,
+        'zolitude': 40,
+        'purvciems': 40,
+        'imanta': 40,
+        'teika': 40,
+        'krasta': 40,
+        'ziepniekkalns': 40
       }
     },
     payment: {
@@ -157,13 +157,13 @@ const warehouses = [
         'ziepniekkalns': 55
       },
       'twenty-four': {
-        'centrs': 55,
-        'zolitude': 55,
-        'purvciems': 55,
-        'imanta': 55,
-        'teika': 55,
-        'krasta': 55,
-        'ziepniekkalns': 55
+        'centrs': 50,
+        'zolitude': 50,
+        'purvciems': 50,
+        'imanta': 50,
+        'teika': 50,
+        'krasta': 50,
+        'ziepniekkalns': 50
       }
     },
     payment: {
@@ -220,13 +220,13 @@ const warehouses = [
         'ziepniekkalns': 69
       },
       'twenty-four': {
-        'centrs': 69,
-        'zolitude': 69,
-        'purvciems': 69,
-        'imanta': 69,
-        'teika': 69,
-        'krasta': 69,
-        'ziepniekkalns': 69
+        'centrs': 62,
+        'zolitude': 62,
+        'purvciems': 62,
+        'imanta': 62,
+        'teika': 62,
+        'krasta': 62,
+        'ziepniekkalns': 62
       }
     },
     payment: {
@@ -283,13 +283,13 @@ const warehouses = [
         'ziepniekkalns': 89
       },
       'twenty-four': {
-        'centrs': 89,
-        'zolitude': 89,
-        'purvciems': 89,
-        'imanta': 89,
-        'teika': 89,
-        'krasta': 89,
-        'ziepniekkalns': 89
+        'centrs': 81,
+        'zolitude': 81,
+        'purvciems': 81,
+        'imanta': 81,
+        'teika': 81,
+        'krasta': 81,
+        'ziepniekkalns': 81
       }
     },
     payment: {
@@ -346,13 +346,13 @@ const warehouses = [
         'ziepniekkalns': 105
       },
       'twenty-four': {
-        'centrs': 105,
-        'zolitude': 105,
-        'purvciems': 105,
-        'imanta': 105,
-        'teika': 105,
-        'krasta': 105,
-        'ziepniekkalns': 105
+        'centrs': 95,
+        'zolitude': 95,
+        'purvciems': 95,
+        'imanta': 95,
+        'teika': 95,
+        'krasta': 95,
+        'ziepniekkalns': 95
       }
     },
     payment: {
@@ -617,6 +617,28 @@ showVisual();
 // needTransport();
 
 
+
+// Image Zoom
+
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modal-content");
+const closeSpan = document.querySelector(".close");
+const allImages = document.querySelectorAll(".zoom-images");
+
+for (const img of allImages) {
+  img.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  })
+}
+
+const closeElements = [closeSpan, modal];
+
+closeElements.map(close => {
+  close.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+});
 
 
 

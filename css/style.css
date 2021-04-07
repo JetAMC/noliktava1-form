@@ -128,6 +128,16 @@ label {
   margin-bottom: 55px;
 }
 
+.main__steps:after {
+  content: "";
+  position: absolute;
+  max-width: 495px;
+  width: 100%;
+  border-top: 1px solid #DBDBDB;
+  margin-top: 10px;
+  z-index: 1;
+}
+
 .main__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,7 +315,8 @@ label {
   border: none;
   border-radius: 50%;
   display: inline-block;
-  opacity: 0.5;
+  opacity: 1;
+  z-index: 2;
 }
 
 /* Mark the active step: */
@@ -905,12 +916,69 @@ label {
   font-weight: 300;
 }
 
-.footer__right-powered p {
+.footer__right-powered a {
   font-size: 17px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.footer__right-powered p img {
+.footer__right-powered a img {
   position: relative;
   top: 3px;
+}
+
+/* Image Zoom *****************************************/
+.zoom-images {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.zoom-images:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 950px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #000;
+  font-size: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:focus, .close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
