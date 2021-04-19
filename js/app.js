@@ -36,11 +36,6 @@ function fixStepIndicator(n) {
   stepIndicator[n].className += " active";
 }
 
-// prices: {
-//   'one': {
-//     imanta: 55,
-//     teika: 65,
-//   },
 
 
 
@@ -426,16 +421,18 @@ const warehouses = [
 ];
 
 
+// catch selected fields from Tilda and save it to clientObj
+const dataFromTilda = window.location.search;
+const tildaArr = dataFromTilda.slice(1).split("&");
 
-
-
-
-
+const tildaArea = tildaArr[0];
+const tildaTerm = tildaArr[1];
+const tildaSize = tildaArr[2];
 
 const clientObj = {
-  'client-warehouse': 'zolitude',
-  'client-term': 'two',
-  'client-size': '7'
+  'client-warehouse': tildaArea,
+  'client-term': tildaTerm,
+  'client-size': tildaSize
 }
 
 // first step change area order based on what client have chosen on tilda website
