@@ -715,9 +715,15 @@ label {
 }
 
 .footer__policy {
+  display: flex;
+  flex-direction: column;
   a {
     font-size: 17px;
+    margin-bottom: 14px;
     color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
