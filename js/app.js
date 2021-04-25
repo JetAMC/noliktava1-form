@@ -435,7 +435,13 @@ const clientObj = {
   'client-size': tildaSize
 }
 
-// first step change area order based on what client have chosen on tilda website
+if (!dataFromTilda) {
+  clientObj['client-warehouse'] = 'zolitude';
+  clientObj['client-term'] = 'two';
+  clientObj['client-size'] = '10';
+}
+
+// first step change area order, based on what client have chosen on tilda website
 const defaultWarehouse = document.querySelector('.' + 'zolitude');
 const firstElement = document.querySelector('.' + clientObj['client-warehouse']);
 const parent = defaultWarehouse.parentNode;
@@ -585,17 +591,20 @@ for (const size of selectedSize) {
 }
 
 
+//TODO 
+// 1. transport
+// 3. responsive mobile
+// 4. paysera
+// 5. email template
+// 8. noindex nofollow, hide from google
 
 
-
-// // transport needed
-// const transport = document.querySelectorAll('input[name="transport"]'); // raznij name u kazhdogo checkbox
+// transport needed
+// const transport = document.querySelectorAll('.transport');
 
 // function needTransport() {
 //   for (const elem of transport) {
-//     if (elem.checked) {
-//       console.log(true);
-//     }
+//     console.log(elem);
 //   }
 // }
 
@@ -611,7 +620,7 @@ showData(selectedTerm, clientObj['client-term'], dropdownTerm);
 showData(selectedSize, clientObj['client-size'], dropdownSize);
 
 showVisual();
-// needTransport();
+
 
 
 
