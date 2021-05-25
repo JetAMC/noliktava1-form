@@ -36,7 +36,7 @@
               <span>01. Подтвердите район</span>
             </div>
             <div class="tab__elements first">
-              <!-- Zolitude -->
+              <!-- Zolitude --->
               <label class="tab__step-one zolitude">
                 <div class="tab__img">
                   <img alt="" src="images/zolitude.jpg">
