@@ -23,6 +23,7 @@ function nextPrev(n) {
   currentTab += n;
   // Otherwise, display the correct tab:
   showTab(currentTab);
+  location.href = '#main-form';
 }
 
 function fixStepIndicator(n) {

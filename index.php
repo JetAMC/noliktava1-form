@@ -23,7 +23,7 @@
       <div class="main__big-title">
         <h1><span>Рассчитайте стоимость</span><br>аренды вашего бокса</h1>
       </div>
-      <div class="main__form">
+      <div class="main__form" id="main-form">
         <div class="main__steps">
             <span class="step"></span>
             <span class="step"></span>

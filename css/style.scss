@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 375px;
 }
@@ -807,6 +811,8 @@ label {
   }
 }
 
-.test-next-button, .test-prev-button {
+.next-button, .prev-button {
+  border: 0;
+  background: transparent;
   display: none;
 }
