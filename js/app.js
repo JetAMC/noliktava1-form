@@ -594,7 +594,6 @@ for (const size of selectedSize) {
 //TODO 
 // 1. transport
 // 3. responsive mobile
-// 4. paysera
 // 5. email template
 // 8. noindex nofollow, hide from google
 
@@ -622,6 +621,48 @@ showData(selectedSize, clientObj['client-size'], dropdownSize);
 showVisual();
 
 
+// MOBILE RADIO BUTTON SLIDER CONTROLS
+const thirdStepRadio = document.querySelectorAll(".third-step-radio");
+const prevButtonRadio = document.querySelector(".prev-button");
+const nextButtonRadio = document.querySelector(".next-button");
+
+let currentRadioSlide;
+
+for (let i = 0; i < thirdStepRadio.length; i++) {
+  if (!thirdStepRadio[i].children[0].checked) {
+    thirdStepRadio[i].classList.add("hide");
+  } else {
+    currentRadioSlide = i;
+  }
+}
+
+showSlides(currentRadioSlide);
+
+function plusSlides(n) {
+  showSlides(currentRadioSlide += n);
+}
+
+function showSlides(n) {
+  if (n >= thirdStepRadio.length) {
+    currentRadioSlide = thirdStepRadio.length - 1;
+  }
+  if (n < 1) {
+    currentRadioSlide = 1
+  }
+  for (const elem of thirdStepRadio) {
+    if (window.innerWidth < 900) {
+      elem.style.display = "none";
+    }
+  }
+  thirdStepRadio[currentRadioSlide].style.display = "flex";
+  selectedSize[currentRadioSlide].checked = true;
+  showVisual();
+  showData(selectedSize, clientObj['client-size'], dropdownSize);
+} 
+
+
+
+
 
 
 // Image Zoom
@@ -645,6 +686,11 @@ closeElements.map(close => {
     modal.style.display = "none";
   });
 });
+
+
+
+
+
 
 
 

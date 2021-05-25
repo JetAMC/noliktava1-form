@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
   <div class="main">
@@ -34,7 +35,7 @@
             <div class="tab__title">
               <span>01. Подтвердите район</span>
             </div>
-            <div class="tab__elements">
+            <div class="tab__elements first">
               <!-- Zolitude -->
               <label class="tab__step-one zolitude">
                 <div class="tab__img">
@@ -222,6 +223,7 @@
             </div>
             <div class="tab__elements third">
               <div class="tab__radio-buttons">
+                <button class="prev-button" onclick="plusSlides(-1)"><img src="images/minus-slide.svg" /></button>
                 <label class="third-step-radio">
                   <input value="4" type="radio" name="size">
                   <span class="checkmark-third-step rounded-left">4 м²</span>
@@ -246,6 +248,7 @@
                   <input value="30" type="radio" name="size">
                   <span class="checkmark-third-step rounded-right">30 м²</span>
                 </label>
+                <button class="next-button" onclick="plusSlides(1)"><img src="images/plus-slide.svg" /></button>
               </div>
               <div id="4" class="tab__visual">
                 <div class="tab__visual-img value-img">
@@ -480,7 +483,9 @@
                   <button type="submit" id="pay-with-card" value="">Оплатить картой</button>
                 </div>
                 <div class="privacy">
-                  <input type="checkbox" name="privacy-policy" required><p>Я согласен с <span>политикой конфиденциальности</span> и <span>договором офертой</span></p>
+                  <label class="privacy__label">
+                    <input type="checkbox" name="privacy-policy" required><p>Я согласен с <span>политикой конфиденциальности</span> и <span>договором офертой</span></p>
+                  </label>
                 </div>
                 <div class="payment-systems">
                   <img alt="" src="images/paysera_logotype_internet.png">

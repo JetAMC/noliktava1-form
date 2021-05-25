@@ -9,6 +9,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  min-width: 375px;
+}
+
 button {
   cursor: pointer;
 }
@@ -21,6 +25,7 @@ button:focus, input:focus {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 label {
@@ -188,18 +193,11 @@ label {
   max-width: 194px;
   width: 100%;
   margin-bottom: 52px;
-}
-
-.zolitude:nth-child(-n+3), .purvciems:nth-child(-n+3), .krasta:nth-child(-n+3), .imanta:nth-child(-n+3), .centrs:nth-child(-n+3), .ziepniekkalns:nth-child(-n+3), .teika:nth-child(-n+3) {
   margin-right: 37px;
 }
 
-.zolitude:nth-child(3n+2), .purvciems:nth-child(3n+2), .krasta:nth-child(3n+2), .imanta:nth-child(3n+2), .centrs:nth-child(3n+2), .ziepniekkalns:nth-child(3n+2), .teika:nth-child(3n+2) {
-  margin-right: 37px;
-}
-
-.zolitude:nth-child(3n+3), .purvciems:nth-child(3n+3), .krasta:nth-child(3n+3), .imanta:nth-child(3n+3), .centrs:nth-child(3n+3), .ziepniekkalns:nth-child(3n+3), .teika:nth-child(3n+3) {
-  margin-right: 37px;
+.zolitude:nth-child(4n), .purvciems:nth-child(4n), .krasta:nth-child(4n), .imanta:nth-child(4n), .centrs:nth-child(4n), .ziepniekkalns:nth-child(4n), .teika:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .tab__title {
@@ -808,6 +806,15 @@ label {
   font-weight: 600;
 }
 
+.privacy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .payment-systems {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -990,10 +997,7 @@ label {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
+.test-next-button, .test-prev-button {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

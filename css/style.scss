@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  min-width: 375px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 button {
@@ -20,6 +24,7 @@ button:focus, input:focus {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 label {
@@ -143,14 +148,9 @@ label {
   max-width: 194px;
   width: 100%;
   margin-bottom: 52px;
-  &:nth-child(-n+3) {
-    margin-right: 37px;
-  }
-  &:nth-child(3n+2) {
-    margin-right: 37px;
-  }
-  &:nth-child(3n+3) {
-    margin-right: 37px;
+  margin-right: 37px;
+  &:nth-child(4n) {
+    margin-right: 0px;
   }
 }
 
@@ -644,6 +644,11 @@ label {
   }
 }
 
+.privacy__label {
+  display: flex;
+  align-items: center;
+}
+
 .payment-systems {
   display: flex;
   align-items: center;
@@ -802,9 +807,6 @@ label {
   }
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-} 
+.test-next-button, .test-prev-button {
+  display: none;
+}
