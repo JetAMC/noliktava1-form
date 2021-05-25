@@ -1,0 +1,25 @@
+ERR 88.201.227.174 [2021-05-18 00:57:00 +0300] v1.6: WebToPay_Exception_Callback: Not enough parameters in callback. Possible version mismatch in /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php:2191
+Stack trace:
+#0 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(1246): WebToPay_Sign_SS2SignChecker->checkSign(Array)
+#1 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(229): WebToPay_CallbackValidator->validateAndParseData(Array)
+#2 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(197): WebToPay::validateAndParseData(Array, 203325, '40a8e50752d27a5...')
+#3 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/callback.php(12): WebToPay::checkResponse(Array, Array)
+#4 {main}
+Query: 
+ERR 88.201.227.174 [2021-05-18 01:05:09 +0300] v1.6: WebToPay_Exception_Callback: Not enough parameters in callback. Possible version mismatch in /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php:2191
+Stack trace:
+#0 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(1246): WebToPay_Sign_SS2SignChecker->checkSign(Array)
+#1 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(229): WebToPay_CallbackValidator->validateAndParseData(Array)
+#2 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(197): WebToPay::validateAndParseData(Array, 203325, '40a8e50752d27a5...')
+#3 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/callback.php(12): WebToPay::checkResponse(Array, Array)
+#4 {main}
+Query: 
+ERR 88.201.227.174 [2021-05-18 01:05:10 +0300] v1.6: WebToPay_Exception_Callback: Not enough parameters in callback. Possible version mismatch in /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php:2191
+Stack trace:
+#0 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(1246): WebToPay_Sign_SS2SignChecker->checkSign(Array)
+#1 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(229): WebToPay_CallbackValidator->validateAndParseData(Array)
+#2 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/WebToPay.php(197): WebToPay::validateAndParseData(Array, 203325, '40a8e50752d27a5...')
+#3 /var/www/vhosts/noliktava1.lv/form.noliktava1.lv/test/callback.php(12): WebToPay::checkResponse(Array, Array)
+#4 {main}
+Query: 
+OK 195.216.233.130 [2021-05-18 05:44:06 +0300] v1.6: orderid=288888278&amount=43400&currency=EUR&country=LV&test=1&version=1.6&projectid=203325&original_paytext=&type=macro&paytext=Pas%C5%ABt%C4%ABjuma+nr.%3A+288888278+http%3A%2F%2Fform.noliktava1.lv+projekts.+%28P%C4%81rdev%C4%93js%3A+Noliktava1%29&payment=wallet&p_email=technics30%40inbox.lv&m_pay_restored=479840240&tried_changing_email=1&frame=0&account=TEST1234567890&status=1&payamount=43400&paycurrency=EUR&requestid=479840240&name=Name&surename=Last+name
