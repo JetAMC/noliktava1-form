@@ -1,4 +1,11 @@
 @media screen and (max-width: 1015px) {
+  .footer__logo img {
+    max-width: 200px;
+    width: 100%;
+  }
+  .footer {
+    padding: 29px 10px;
+  }
   .footer__container, .footer__right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7,6 +14,23 @@
   }
   .footer__right-side {
     margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer__left {
+    margin-bottom: 30px;
+  }
+  .footer__contacts {
+    margin-bottom: 14px;
+  }
+  .policy-confident {
+    display: none;
+  }
+  .footer__right-data {
+    pointer-events: none;
+  }
+  .footer__right-data > a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 

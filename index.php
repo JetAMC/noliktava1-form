@@ -526,7 +526,7 @@
             <a href="mailto:noliktava1@inbox.lv"><img alt="" src="images/mail.png">noliktava1@inbox.lv</a>
           </div>
           <div class="footer__policy">
-            <a href="https://noliktava1.lv/privacy" target="_blank">Политика конфиденциальности</a>
+            <a class="policy-confident" href="https://noliktava1.lv/privacy" target="_blank">Политика конфиденциальности</a>
             <a href="http://form.noliktava1.lv/documents/noliktava1-lv.pdf" target="_blank">Правила</a>
           </div>
         </div>
