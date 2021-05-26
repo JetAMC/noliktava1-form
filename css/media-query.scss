@@ -116,10 +116,11 @@
 }
 
 @media screen and (max-width: 750px) {
-    .tab__visual-title {
-        span {
-            font-size: 20px;
-        }
+    .tab__visual-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     .tab__visual {
         flex-direction: column-reverse;
@@ -127,6 +128,10 @@
         align-items: center;
     }
     .tab__visual-transport-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         p {
             text-align: center;
         }
@@ -139,6 +144,18 @@
     }
     .tab__radio-buttons {
         margin-bottom: 35px;
+    }
+    .tab__visual-title {
+        max-width: 305px;
+        width: 100%;
+        text-align: center;
+        span {
+            font-size: 20px;
+        }
+    }
+    .tab__visual-small-text {
+        max-width: 270px;
+        width: 100%;
     }
 }
 

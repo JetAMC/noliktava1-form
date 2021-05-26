@@ -124,8 +124,20 @@
 }
 
 @media screen and (max-width: 750px) {
-  .tab__visual-title span {
-    font-size: 20px;
+  .tab__visual-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .tab__visual {
     -webkit-box-orient: vertical;
@@ -139,6 +151,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .tab__visual-transport-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .tab__visual-transport-area p {
     text-align: center;
   }
@@ -150,6 +177,18 @@
   }
   .tab__radio-buttons {
     margin-bottom: 35px;
+  }
+  .tab__visual-title {
+    max-width: 305px;
+    width: 100%;
+    text-align: center;
+  }
+  .tab__visual-title span {
+    font-size: 20px;
+  }
+  .tab__visual-small-text {
+    max-width: 270px;
+    width: 100%;
   }
 }
 

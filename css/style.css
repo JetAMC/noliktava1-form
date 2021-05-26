@@ -861,6 +861,11 @@ label {
   width: 100%;
 }
 
+.footer__logo img {
+  max-width: 225px;
+  width: 100%;
+}
+
 .footer__socials a {
   margin-right: 14px;
 }
