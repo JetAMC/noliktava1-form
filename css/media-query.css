@@ -3,8 +3,12 @@
     max-width: 200px;
     width: 100%;
   }
+  .footer__logo p {
+    max-width: 100%;
+  }
   .footer {
     padding: 29px 10px;
+    text-align: center;
   }
   .footer__container, .footer__right {
     -webkit-box-orient: vertical;
@@ -25,12 +29,8 @@
   .policy-confident {
     display: none;
   }
-  .footer__right-data {
-    pointer-events: none;
-  }
-  .footer__right-data > a {
-    text-decoration: none;
-    color: inherit;
+  .footer__right-title, .footer__right-data {
+    display: none;
   }
 }
 
