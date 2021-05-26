@@ -39,17 +39,13 @@
     padding: 35px 17px;
   }
   .first {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .zolitude, .purvciems, .krasta, .imanta, .centrs, .ziepniekkalns, .teika {
     max-width: 144px;
     width: 100%;
-    margin-right: 13px;
-  }
-  .zolitude:nth-child(4n), .purvciems:nth-child(4n), .krasta:nth-child(4n), .imanta:nth-child(4n), .centrs:nth-child(4n), .ziepniekkalns:nth-child(4n), .teika:nth-child(4n) {
-    margin-right: 13px;
+    margin-right: 0;
   }
   .tab__img img {
     max-width: 144px;
@@ -209,9 +205,6 @@
   .tab__title span {
     font-size: 20px;
   }
-  .zolitude:nth-child(3n), .purvciems:nth-child(3n), .krasta:nth-child(3n), .imanta:nth-child(3n), .centrs:nth-child(3n), .ziepniekkalns:nth-child(3n), .teika:nth-child(3n) {
-    margin-right: 0;
-  }
   .main__steps::after {
     margin-top: 7px;
   }
@@ -290,12 +283,6 @@
   }
   .main__big-title {
     margin-bottom: 42px;
-  }
-  .zolitude:nth-child(2n), .purvciems:nth-child(2n), .krasta:nth-child(2n), .imanta:nth-child(2n), .centrs:nth-child(2n), .ziepniekkalns:nth-child(2n), .teika:nth-child(2n) {
-    margin-right: 0;
-  }
-  .zolitude:nth-child(3n), .purvciems:nth-child(3n), .krasta:nth-child(3n), .imanta:nth-child(3n), .centrs:nth-child(3n), .ziepniekkalns:nth-child(3n), .teika:nth-child(3n) {
-    margin-right: 13px;
   }
 }
 /*# sourceMappingURL=media-query.css.map */
