@@ -184,7 +184,7 @@ label {
   color: #991010;
 }
 
-/* Hide all steps by default: **/
+/* Hide all steps by default: */
 .tab {
   display: none;
   -webkit-box-orient: vertical;
