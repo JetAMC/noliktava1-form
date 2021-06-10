@@ -152,7 +152,7 @@
           </div>
           <div class="tab">
             <div class="tab__title">
-              <span>02. Выберите срок</span>
+              <span>02. Выберите срок аренды</span>
             </div>
             <div class="tab__elements second">
               <!-- One month -->
@@ -219,7 +219,7 @@
           </div>
           <div class="tab">
             <div class="tab__title">
-              <span>03. Выберите размер</span>
+              <span>03. Выберите размер бокса</span>
             </div>
             <div class="tab__elements third">
               <div class="tab__radio-buttons">
@@ -256,14 +256,16 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 4 м² — Для хранения небольшого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 97 коробок размера 590x390x447мм . Обычно хранят:</p>
                     <ul>
                       <li><span>Велосипеды</span></li>
                       <li><span>Покрышки</span></li>
                       <li><span>Коробки с вещами</span></li>
+                      <li><span>Освободить место на балконе</span></li>
+                      <li><span>Небольшой переезд</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
@@ -280,14 +282,16 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 5 м² — Для хранения небольшого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 130 коробок размера 590x390x447мм . Обычно хранят:</p>
                     <ul>
                       <li><span>Велосипеды</span></li>
                       <li><span>Покрышки</span></li>
                       <li><span>Коробки с вещами</span></li>
+                      <li><span>Освободить место на балконе</span></li>
+                      <li><span>Небольшой переезд</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
@@ -304,14 +308,13 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 7 м² — Для переезда, во время ремонта, для хранения товара</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 195 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Велосипеды</span></li>
-                      <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
+                      <li><span>Помещает в себя вещи из полностью заполненного "буса" Mercedes Sprinter Maxi</span></li>
+                      <li><span>Обычно используют во время ремонта, переезда, либо для хранения товара</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
@@ -328,14 +331,12 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 10 м² — Для хранения вещей во время ремонта или переезда, а также для хранения товаров различных бизнесов</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 260 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Велосипеды</span></li>
-                      <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
+                      <li><span>Отлично подходит для хранения вещей во время ремонта или переезда, а также для хранения товаров различных бизнесов, строительных материалов, летних кафе и ресторанов</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
@@ -352,14 +353,13 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 15 м² — Для переезда 2-х этажной квартиры/дома или для хранения товара</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 390 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Велосипеды</span></li>
-                      <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
+                      <li><span>Помещает в себя вещи из 2-х полностью заполненных "бусиков" Mercedes Sprinter Maxi</span></li>
+                      <li><span>Обычно используют во время переезда 2-х этажной квартиры/дома или для хранения товара</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
@@ -376,14 +376,12 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Для переезда, во время ремонта, для хранения товара</span>
+                    <span>Бокс 30 м² — Для хранения множества товаров, переезда ресторана или хранения оборудования</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера... . Обычно хранят:</p>
+                    <p>Вмещает в себя примерно 780 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Велосипеды</span></li>
-                      <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
+                      <li><span>В 95% случаев арендуют для хранения множества товаров, переезда ресторана или хранения оборудования</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
