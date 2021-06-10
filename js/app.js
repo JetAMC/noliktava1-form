@@ -648,7 +648,7 @@ function showSlides(n) {
     currentRadioSlide = thirdStepRadio.length - 1;
   }
   if (n < 1) {
-    currentRadioSlide = 1
+    currentRadioSlide = 0;
   }
   for (const elem of thirdStepRadio) {
     if (window.innerWidth < 900) {
