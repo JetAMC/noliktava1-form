@@ -537,7 +537,7 @@ for (const input of priceForPaysera) {
 
 // add event when chaning size of warehouse in dropdown (one the last step);
 const dropdownArr = [dropdownSize, dropdownArea, dropdownTerm];
-dropdownArr.map(elem => elem.addEventListener('change', showPriceForPaysera));
+dropdownArr.forEach(elem => elem.addEventListener('change', showPriceForPaysera));
 
 
 
@@ -551,7 +551,7 @@ function showData(inputArr, clientData, dropdown) {
   for (const elem in clientObj) {
     clientData === clientObj[elem] ? clientObj[elem] = '' : undefined;
   }
-
+  needTransport();
   showPriceForPaysera();
 }
 
@@ -594,25 +594,23 @@ for (const size of selectedSize) {
 
 //TODO 
 // 1. transport
-// 3. responsive mobile
 // 5. email template
 // 8. noindex nofollow, hide from google
 
 
 // transport needed
-// const transport = document.querySelectorAll('.transport');
+const transport = document.querySelectorAll('.transport');
+const transportLastStep = document.querySelector('.needed-transport');
 
-// function needTransport() {
-//   for (const elem of transport) {
-//     console.log(elem);
-//   }
-// }
+function needTransport() {
+  for (const elem of transport) {
+    elem.checked ? transportLastStep.value = elem.value : undefined;
+  }
+}
 
-// // elem.checked = false; - checkbox unchecked
-
-// for (const elem of transport) {
-//   elem.addEventListener('change', needTransport);
-// }
+// transfer phone number from tilda to email (not checked)
+const phoneNumberLastStep = documenbt.querySelector('.phone-number');
+phoneNumberLastStep.value = tildaArr[3];
 
 
 showData(selectedArea, clientObj['client-warehouse'], dropdownArea);
@@ -620,6 +618,10 @@ showData(selectedTerm, clientObj['client-term'], dropdownTerm);
 showData(selectedSize, clientObj['client-size'], dropdownSize);
 
 showVisual();
+
+needTransport();
+
+
 
 
 // MOBILE RADIO BUTTON SLIDER CONTROLS
@@ -660,10 +662,6 @@ function showSlides(n) {
   showVisual();
   showData(selectedSize, clientObj['client-size'], dropdownSize);
 } 
-
-
-
-
 
 
 // Image Zoom

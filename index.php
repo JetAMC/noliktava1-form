@@ -259,17 +259,23 @@
                     <span>Бокс 4 м² — Для хранения небольшого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 97 коробок размера 590x390x447мм . Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 97 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
                       <li><span>Велосипеды</span></li>
                       <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
-                      <li><span>Освободить место на балконе</span></li>
-                      <li><span>Небольшой переезд</span></li>
+                      <li><span>Коробки</span></li>
+                      <li><span>Сезонные вещи</span></li>
+                      <li><span>Личные вещи в случае переезда</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-four"><span>Необходима перевозка</span>
+                        <label>
+                          <div class="custom-radio">
+                            <input class="transport" value="transport-four" type="radio" name="transport">
+                            <span class="checkmark"></span>
+                            <span>Необходима перевозка</span>
+                          </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -285,17 +291,23 @@
                     <span>Бокс 5 м² — Для хранения небольшого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 130 коробок размера 590x390x447мм . Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 130 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
                       <li><span>Велосипеды</span></li>
                       <li><span>Покрышки</span></li>
-                      <li><span>Коробки с вещами</span></li>
-                      <li><span>Освободить место на балконе</span></li>
-                      <li><span>Небольшой переезд</span></li>
+                      <li><span>Коробки</span></li>
+                      <li><span>Сезонные вещи</span></li>
+                      <li><span>Личные вещи в случае переезда</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-five"><span>Необходима перевозка</span>
+                        <label>
+                            <div class="custom-radio">
+                              <input class="transport" value="transport-five" type="radio" name="transport">
+                              <span class="checkmark"></span>
+                              <span>Необходима перевозка</span>
+                            </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -311,14 +323,20 @@
                     <span>Бокс 7 м² — Для переезда, во время ремонта, для хранения товара</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 195 коробок размера 590x390x447мм. Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 195 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Помещает в себя вещи из полностью заполненного "буса" Mercedes Sprinter Maxi</span></li>
-                      <li><span>Обычно используют во время ремонта, переезда, либо для хранения товара</span></li>
+                      <li><span>Вместимость Mercedes Sprinter Maxi</span></li>
+                      <li><span>Используют во время ремонта, переезда, для хранения товара</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-seven"><span>Необходима перевозка</span>
+                        <label>
+                          <div class="custom-radio">
+                            <input class="transport" value="transport-seven" type="radio" name="transport">
+                            <span class="checkmark"></span>
+                            <span>Необходима перевозка</span>
+                          </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -331,16 +349,25 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Бокс 10 м² — Для хранения вещей во время ремонта или переезда, а также для хранения товаров различных бизнесов</span>
+                    <span>Бокс 10 м² — Для бизнеса, а также для вещей во время ремонта или переезда</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 260 коробок размера 590x390x447мм. Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 260 коробок 590x390x447мм. Часто хранят:</p>
                     <ul>
-                      <li><span>Отлично подходит для хранения вещей во время ремонта или переезда, а также для хранения товаров различных бизнесов, строительных материалов, летних кафе и ресторанов</span></li>
+                      <li><span>Вещи во время ремонта или переезда</span></li>
+                      <li><span>Строительные материалы</span></li>
+                      <li><span>Оборудование летних кафе и ресторанов</span></li>
+                      <li><span>Другие товары</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-ten"><span>Необходима перевозка</span>
+                        <label>
+                          <div class="custom-radio">
+                            <input class="transport" value="transport-ten" type="radio" name="transport">
+                            <span class="checkmark"></span>
+                            <span>Необходима перевозка</span>
+                          </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -353,17 +380,26 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Бокс 15 м² — Для переезда 2-х этажной квартиры/дома или для хранения товара</span>
+                    <span>Бокс 15 м² — Для переезда квартиры/дома или для хранения товара</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 390 коробок размера 590x390x447мм. Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 390 коробок 590x390x447мм. Часто хранят:</p>
                     <ul>
-                      <li><span>Помещает в себя вещи из 2-х полностью заполненных "бусиков" Mercedes Sprinter Maxi</span></li>
-                      <li><span>Обычно используют во время переезда 2-х этажной квартиры/дома или для хранения товара</span></li>
+                      <li><span>Вместимость 2 Mercedes Sprinter Maxi</span></li>
+                      <li><span>Вещи во время ремонта или переезда</span></li>
+                      <li><span>Строительные материалы</span></li>
+                      <li><span>Оборудование летних кафе и ресторанов</span></li>
+                      <li><span>Другие товары</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-fifteen"><span>Необходима перевозка</span>
+                        <label>
+                          <div class="custom-radio">
+                            <input class="transport" value="transport-fifteen" type="radio" name="transport">
+                            <span class="checkmark"></span>
+                            <span>Необходима перевозка</span>
+                          </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -376,16 +412,26 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Бокс 30 м² — Для хранения множества товаров, переезда ресторана или хранения оборудования</span>
+                    <span>Бокс 30 м² — Для задач бизнеса</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя примерно 780 коробок размера 590x390x447мм. Обычно хранят:</p>
+                    <p>Вмещает в себя ~ 780 коробок размера 590x390x447мм. В 95% случаев арендуют:</p>
                     <ul>
-                      <li><span>В 95% случаев арендуют для хранения множества товаров, переезда ресторана или хранения оборудования</span></li>
+                      <li><span>Для хранения товаров</span></li>
+                      <li><span>Для мебели ресторанов и кафе</span></li>
+                      <li><span>Для строительных материалов</span></li>
+                      <li><span>Для оборудования</span></li>
+                      <li><span>Для других товаров</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
                       <div class="tab__visual-transport">
-                        <input class="transport" type="checkbox" name="transport-thirty"><span>Необходима перевозка</span>
+                        <label>
+                          <div class="custom-radio">
+                            <input class="transport" value="transport-thirty" type="radio" name="transport">
+                            <span class="checkmark"></span>
+                            <span>Необходима перевозка</span>
+                          </div>
+                        </label>
                       </div>
                       <p>Перевозка от 40 евро. Это вас ни к чему не обязывает. Все условия обсуждаются с менеджером.</p>
                     </div>
@@ -477,9 +523,10 @@
                   </label>
                 </div>
 				<input type="hidden" value="" name="phone-number">
+        <input class="needed-transport" type="hidden" value="" name="needed-transport">
                 <div class="submit-buttons">
                   <button type="submit" id="pay-with-online-bank" value="">Оплатить через интернет-банк</button>
-                  <button type="submit" id="pay-with-card" value="">Оплатить картой</button>
+                  <!--<button type="submit" id="pay-with-card" value="">Оплатить картой</button>-->
                 </div>
                 <div class="privacy">
                   <label class="privacy__label">
