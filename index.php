@@ -109,7 +109,7 @@
                   <div class="custom-radio">
                     <input value="teika" type="radio" name="area">
                     <span class="checkmark"></span>
-                    <span>Теика</span>
+                    <span>Тейка</span>
                   </div>
                 </div>
                 <div class="tab__text">
@@ -259,8 +259,8 @@
                     <span>Бокс 4 м² — Для хранения небольшого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя ~ 97 коробок размера 590x390x447мм. Обычно хранят:</p>
-                    <ul>
+                    <p>Вмещает в себя ~ 97 коробок размера 590x390x447мм.</p>
+                    <ul><p>Обычно хранят:</p>
                       <li><span>Велосипеды</span></li>
                       <li><span>Покрышки</span></li>
                       <li><span>Коробки</span></li>
@@ -325,7 +325,7 @@
                   <div class="tab__visual-small-text">
                     <p>Вмещает в себя ~ 195 коробок размера 590x390x447мм. Обычно хранят:</p>
                     <ul>
-                      <li><span>Вместимость Mercedes Sprinter Maxi</span></li>
+                      <li><span>Вместимость заполненого вещами Mercedes Sprinter Maxi</span></li>
                       <li><span>Используют во время ремонта, переезда, для хранения товара</span></li>
                     </ul>
                     <div class="tab__visual-transport-area">
@@ -352,7 +352,7 @@
                     <span>Бокс 10 м² — Для бизнеса, а также для вещей во время ремонта или переезда</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя ~ 260 коробок 590x390x447мм. Часто хранят:</p>
+                    <p>Вмещает в себя ~ 260 коробок 590x390x447мм. Обычно хранят:</p>
                     <ul>
                       <li><span>Вещи во время ремонта или переезда</span></li>
                       <li><span>Строительные материалы</span></li>
@@ -383,7 +383,7 @@
                     <span>Бокс 15 м² — Для переезда квартиры/дома или для хранения товара</span>
                   </div>
                   <div class="tab__visual-small-text">
-                    <p>Вмещает в себя ~ 390 коробок 590x390x447мм. Часто хранят:</p>
+                    <p>Вмещает в себя ~ 390 коробок 590x390x447мм. Обычно хранят:</p>
                     <ul>
                       <li><span>Вместимость 2 Mercedes Sprinter Maxi</span></li>
                       <li><span>Вещи во время ремонта или переезда</span></li>
@@ -412,7 +412,7 @@
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
-                    <span>Бокс 30 м² — Для задач бизнеса</span>
+                    <span>Бокс 30 м² — Для задач бизнеса и хранения большого количества вещей</span>
                   </div>
                   <div class="tab__visual-small-text">
                     <p>Вмещает в себя ~ 780 коробок размера 590x390x447мм. В 95% случаев арендуют:</p>
@@ -484,7 +484,7 @@
                   </label>
                 </div>
                 <div class="tab__final-small-title">
-                  <span>К любому из выбранных вариантов оплаты прибавляется депозит в размереодного месяца аренды<img title="test" src="images/phone-ellipsis.png"></span>
+                  <span>К любому из выбранных вариантов оплаты прибавляется депозит в размере одного месяца аренды<img title="test" src="images/phone-ellipsis.png"></span>
                 </div>
                 <div class="tab__final-dropdowns">
                   <label class="custom-select">
@@ -493,7 +493,7 @@
                       <option value="purvciems">Район: Пурвциемс</option>
                       <option value="centrs">Район: Центр</option>
                       <option value="imanta">Район: Иманта</option>
-                      <option value="teika">Район: Теика</option>
+                      <option value="teika">Район: Тейка</option>
                       <option value="krasta">Район: Краста</option>
                       <option value="ziepniekkalns">Район: Зепниеккалнс</option>
                     </select>
@@ -522,8 +522,8 @@
                     <img alt="" class="fa-angle-down" src="images/custom-select.png">
                   </label>
                 </div>
-				<input type="hidden" value="" name="phone-number">
-        <input class="needed-transport" type="hidden" value="" name="needed-transport">
+                <input class="phone-number" type="hidden" value="" name="phone-number">
+                <input class="needed-transport" type="hidden" value="" name="needed-transport">
                 <div class="submit-buttons">
                   <button type="submit" id="pay-with-online-bank" value="">Оплатить через интернет-банк</button>
                   <!--<button type="submit" id="pay-with-card" value="">Оплатить картой</button>-->

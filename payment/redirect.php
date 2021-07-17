@@ -1,6 +1,6 @@
 <?php
-     $price = $_POST['payment'];
-	 $orderNumber = $_POST['phone-number'];
+
+    $price = $_POST['payment'];
 	 
      require_once('WebToPay.php');
       
@@ -32,7 +32,7 @@
              'amount' => $price * 100,
              'currency' => 'EUR',
              'country' => 'LV',
-             'accepturl' => $self_url . '/accept.php',
+             'accepturl' => 'https://noliktava1.lv/ru/thank-you-page',
              'cancelurl' => $self_url . '/cancel.php',
              'callbackurl' => $self_url . '/callback.php',
              'test' => 1,
@@ -40,27 +40,25 @@
      } catch (WebToPayException $e) {
          // handle exception
      }
-	 
 
-	// sending mail
-	//$price = $_POST['payment'];
-	//$area = $_POST['final-area'];
-	//$term = $_POST['final-term'];
-	//$size = $_POST['final-size'];
-    //$phone = $_POST['phone-number'];
-    //$transport = $_POST['needed-transport'];
-        
-	
-	//$message = "<b>Price to pay:</b> ".$price."<br/><b>Selected Area:</b> ".$area."<br/><b>Selected Term:</b> ".$term."<br/><b>Selected Size:</b> ".$size."<br/><b>Transport:</b> ".$transport"<br/><b>Phone number:</b> ".$phone""; 
-
-	//$to = 'info@noliktava1.lv';  // Кому письмо
-	//$topic = "New lead"; // Тема письма
-	
-	//$headers  = 'MIME-Version: 1.0' . "\r\n";
-	//$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-	//$headers .= 'From: Noliktava1 Form <info@noliktava1.lv>' . "\r\n";
-	// функция, которая отправляет наше письмо. 
-	//mail($to, $topic, $message, $headers);
+     // sending mail
+     $area = $_POST['final-area'];
+     $term = $_POST['final-term'];
+     $size = $_POST['final-size'];
+     $phone = $_POST['phone-number'];
+     $transport = $_POST['needed-transport'];
+         
+ 
+     $message = "<b>Price to pay:</b> ".$price."<br/><b>Selected Area:</b> ".$area."<br/><b>Selected Term:</b> ".$term."<br/><b>Selected Size:</b> ".$size."<br/><b>Transport:</b> ".$transport."<br/><b>Phone number:</b> ".$phone.""; 
+ 
+     $to = 'info@skyjet.lv';  // Кому письмо
+     $topic = "Pilna forma"; // Тема письма
+ 
+     $headers  = 'MIME-Version: 1.0' . "\r\n";
+     $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+     $headers .= 'From: Noliktava1 Form <info@skyjet.lv>' . "\r\n";
+     //функция, которая отправляет наше письмо. 
+     mail($to, $topic, $message, $headers);
 	
 	
 ?>

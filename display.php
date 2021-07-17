@@ -7,8 +7,8 @@
 
     $message = "<b>Area:</b> ".$area."<br/><b>Term:</b> ".$term."<br/><b>Size:</b> ".$size." m2<br/><b>Phone:</b> ".$phone."";
 
-    $to = 'info@noliktava1.lv';
-    $topic = "Noliktava test lead";
+    $to = 'info@skyjet.lv';
+    $topic = "1 Forma";
 
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";

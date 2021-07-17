@@ -429,6 +429,7 @@ const tildaArr = dataFromTilda.slice(1).split("&");
 const tildaArea = tildaArr[0];
 const tildaTerm = tildaArr[1];
 const tildaSize = tildaArr[2];
+const tildaPhone = tildaArr[3];
 
 const clientObj = {
   'client-warehouse': tildaArea,
@@ -551,7 +552,6 @@ function showData(inputArr, clientData, dropdown) {
   for (const elem in clientObj) {
     clientData === clientObj[elem] ? clientObj[elem] = '' : undefined;
   }
-  needTransport();
   showPriceForPaysera();
 }
 
@@ -586,31 +586,41 @@ function showVisual() {
     }
   }
 }
-
+// foreach
 for (const size of selectedSize) {
   size.addEventListener('change', showVisual);
 }
 
 
+
+
 //TODO 
-// 1. transport
-// 5. email template
+// 1. CODE REFACTORING (CHANGE FUNCTION NAMES, TO UNDERSTAND WHAT IS HAPPENING RIGHT HERE)
+// 3. TELEGRAM BUG FIX + Second form send to telegram
+// 4. UTM to TG and EMAIL (from TILDA)
+// 6. TILDA STYLE FORM IN CORRECT position + mobile version
+// 7. translate to Latvian language
 // 8. noindex nofollow, hide from google
 
 
 // transport needed
 const transport = document.querySelectorAll('.transport');
 const transportLastStep = document.querySelector('.needed-transport');
+const phoneNumberLastStep = document.querySelector('.phone-number');
+
+phoneNumberLastStep.value = tildaPhone;
+// console.log(phoneNumberLastStep.value);
 
 function needTransport() {
   for (const elem of transport) {
-    elem.checked ? transportLastStep.value = elem.value : undefined;
+    elem.checked ? transportLastStep.value = "Yes" : undefined;
   }
+  // console.log(transportLastStep.value);
 }
 
-// transfer phone number from tilda to email (not checked)
-const phoneNumberLastStep = documenbt.querySelector('.phone-number');
-phoneNumberLastStep.value = tildaArr[3];
+transport.forEach(input => input.addEventListener("click", needTransport));
+
+
 
 
 showData(selectedArea, clientObj['client-warehouse'], dropdownArea);
@@ -618,8 +628,6 @@ showData(selectedTerm, clientObj['client-term'], dropdownTerm);
 showData(selectedSize, clientObj['client-size'], dropdownSize);
 
 showVisual();
-
-needTransport();
 
 
 
