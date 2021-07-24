@@ -475,10 +475,24 @@ label {
           justify-content: center;
 }
 
-.tab__visual-img img {
+.tab__visual-img {
+  position: relative;
+}
+
+.tab__visual-img .zoom-images {
   max-width: 472px;
   width: 100%;
   margin-right: 67px;
+}
+
+.tab__visual-magnifier {
+  position: absolute;
+  top: 15px;
+  right: 80px;
+}
+
+.tab__visual-magnifier .magnifier {
+  width: 40px;
 }
 
 .tab__visual {

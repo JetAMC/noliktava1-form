@@ -253,6 +253,9 @@
               <div id="4" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/4-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -285,6 +288,9 @@
               <div id="5" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/5-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -317,6 +323,9 @@
               <div id="7" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/7-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -346,6 +355,9 @@
               <div id="10" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/10-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -377,6 +389,9 @@
               <div id="15" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/15-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">
@@ -409,6 +424,9 @@
               <div id="30" class="tab__visual">
                 <div class="tab__visual-img value-img">
                   <img alt="" class="zoom-images" src="images/big/30-meters.jpg">
+                  <div class="tab__visual-magnifier">
+                    <img alt="" class="magnifier" src="images/magnifier.svg">
+                  </div>
                 </div>
                 <div class="tab__visual-text">
                   <div class="tab__visual-title">

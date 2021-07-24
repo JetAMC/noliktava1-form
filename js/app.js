@@ -678,20 +678,26 @@ const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-content");
 const closeSpan = document.querySelector(".close");
 const allImages = document.querySelectorAll(".zoom-images");
+const magnifiers = document.querySelectorAll(".magnifier");
 
-for (const img of allImages) {
-  img.addEventListener("click", () => {
+// TODO - refactor this
+for (let i = 0; i < allImages.length; i++) {
+  allImages[i].addEventListener("click", () => {
     modal.style.display = "block";
-    modalImg.src = img.src;
+    modalImg.src = allImages[i].src;
+  })
+  magnifiers[i].addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = allImages[i].src;
   })
 }
 
 const closeElements = [closeSpan, modal];
 
-closeElements.map(close => {
-  close.addEventListener('click', () => {
+closeElements.forEach(close => {
+  close.addEventListener('click', () =>  {
     modal.style.display = "none";
-  });
+    });
 });
 
 
